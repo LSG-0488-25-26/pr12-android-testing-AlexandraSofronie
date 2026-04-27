@@ -78,6 +78,14 @@ class MainViewModel: ViewModel {
         this._esCarnivor.value = !(this._esCarnivor.value)!!
     }
 
+    fun toggleEsVegetaria() {
+        _esVegetaria.value = !(_esVegetaria.value ?: false)
+    }
+
+    fun toggleEsVega() {
+        _esVega.value = !(_esVega.value ?: false)
+    }
+
     fun toggleTriStateStatus(){
         when(this._triStateStatus.value){
             ToggleableState.On -> setTriStateStatus(ToggleableState.Off)
