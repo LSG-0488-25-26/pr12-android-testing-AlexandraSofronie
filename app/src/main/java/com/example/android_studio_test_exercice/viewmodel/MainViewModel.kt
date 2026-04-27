@@ -28,6 +28,24 @@ class MainViewModel: ViewModel {
     private val _selectedOption: MutableLiveData<String>
     public val selectedOption: LiveData<String>
 
+    private val _sliderValue = MutableLiveData(0f)
+    val sliderValue: LiveData<Float> = _sliderValue
+
+    private val _expanded = MutableLiveData(false)
+    val expanded: LiveData<Boolean> = _expanded
+
+    private val _selectedItem = MutableLiveData("Opció A")
+    val selectedItem: LiveData<String> = _selectedItem
+
+    private val _searchText = MutableLiveData("")
+    val searchText: LiveData<String> = _searchText
+
+    private val _showSnackbar = MutableLiveData(false)
+    val showSnackbar: LiveData<Boolean> = _showSnackbar
+
+    private val _toggleState = MutableLiveData(false)
+    val toggleState: LiveData<Boolean> = _toggleState
+
     /**
      * Constructor de la classe HelloViewModel
      * que inicialitzen els atributs
@@ -71,5 +89,33 @@ class MainViewModel: ViewModel {
 
     private fun setTriStateStatus(triState: ToggleableState){
         this._triStateStatus.value = triState
+    }
+
+    fun setSelectedOption(option: String) {
+        _selectedOption.value = option
+    }
+
+    fun setSliderValue(value: Float) {
+        _sliderValue.value = value
+    }
+
+    fun setExpanded(exp: Boolean) {
+        _expanded.value = exp
+    }
+
+    fun setSelectedItem(item: String) {
+        _selectedItem.value = item
+    }
+
+    fun setSearchText(text: String) {
+        _searchText.value = text
+    }
+
+    fun performSearch() {
+        _showSnackbar.value = _searchText.value?.isNotBlank() == true
+    }
+
+    fun toggle() {
+        _toggleState.value = !(_toggleState.value ?: false)
     }
 }
