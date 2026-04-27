@@ -4,7 +4,7 @@ Este proyecto consiste en una aplicación de Android desarrollada con **Jetpack 
 
 ## 🧪 Estrategia de Testing
 
-![Demostración de Tests](app/docs/unit-vs-integration-tests.gif)
+![Demostración de Tests](app/docs/unit-vs-integration.webp)
 El proyecto se divide en dos grandes bloques de pruebas para asegurar el correcto funcionamiento de la aplicación:
 
 ### 1. Unit Testing (Pruebas Unitarias)
