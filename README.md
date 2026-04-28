@@ -3,11 +3,7 @@
 Este proyecto consiste en una aplicación de Android desarrollada con **Jetpack Compose** orientada a la práctica de **Testing**, tanto unitario como instrumentado. La aplicación muestra diversos componentes de interfaz (interactivos) cuya lógica es gestionada por un `ViewModel`.
 
 ## 🧪 Estrategia de Testing
-
-![Demostración de Tests](app/docs/unit-vs-integration.webp)
-
-<br>
-
+
 El proyecto se divide en dos grandes bloques de pruebas para asegurar el correcto funcionamiento de la aplicación:
 
 ### 1. Unit Testing (Pruebas Unitarias)
