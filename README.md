@@ -3,7 +3,8 @@
 Este proyecto consiste en una aplicación de Android desarrollada con **Jetpack Compose** orientada a la práctica de **Testing**, tanto unitario como instrumentado. La aplicación muestra diversos componentes de interfaz (interactivos) cuya lógica es gestionada por un `ViewModel`.
 
 ## 🧪 Estrategia de Testing
-
+
+
 El proyecto se divide en dos grandes bloques de pruebas para asegurar el correcto funcionamiento de la aplicación:
 
 ### 1. Unit Testing (Pruebas Unitarias)
@@ -31,6 +32,8 @@ Se han diseñado tests para **todos los componentes (Composables)** de la `MainV
 
 **Resultado de los Instrumental Tests:**
 ![Instrumental Testing](app/docs/Instrumental_Testing.png)
+
+**Vídeo Demostración** : <a href="https://1drv.ms/v/c/6f101936c2c0b671/IQCK6ZqgnnFNSYG5fEaNeNO6AbVeui1pSKtxJWpD45YGg4E?e=jSNRhQ"> Click aquí para ver el vídeo </a>
 
 ## 📁 Estructura del Proyecto
 - `app/src/main/java/.../viewmodel/MainViewModel.kt`: Contiene toda la lógica y estados.
